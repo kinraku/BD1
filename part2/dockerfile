@@ -1,0 +1,19 @@
+FROM ubuntu:26.10
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update && apt-get install -y python3-full python3-pip
+
+# наша work директория в контейнере
+WORKDIR /work
+
+COPY requirements.txt /work/
+RUN python3 -m venv /opt/venv
+ENV PATH="/opt/venv/bin:$PATH"
+RUN pip3 install --no-cache-dir -r requirements.txt
+
+# весь код приложения в контейнер
+COPY . /work/
+
+# запуск приложения
+CMD ["python3", "app.py"]

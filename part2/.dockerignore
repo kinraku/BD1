@@ -1,0 +1,6 @@
+/Dockerfile
+/.dockerignore
+/pgdata
+/logs
+__pycache__
+*.pyc
