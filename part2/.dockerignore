@@ -1,5 +1,3 @@
-/Dockerfile
-/.dockerignore
 /pgdata
 /logs
 __pycache__
