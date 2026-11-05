@@ -1,5 +1,4 @@
 {
-  "app_title": "Config App",
-  "theme_color": "#2c3e50",
+  "app_message": "Заголовок1 config",
   "max_factorial_limit": 15
 }

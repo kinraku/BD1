@@ -4,9 +4,9 @@
 <body style="font-family: Arial; padding: 40px; background-color: #f4f7f6;">
     <div style="background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
         <h1 style="color: #2c3e50;">Test</h1>
-        <p><b>Custom Message:</b> {{ message }}</p>
+        <p><b>message:</b> {{ message }}</p>
         <hr>
-        <p>Проверка: перейти на <a href="/calculate?n=6">/calculate?n=6</a></p>
+        <p>перейти на <a href="/calculate?n={{ limit }}">/calculate?n={{ limit }}</a></p>
     </div>
 </body>
 </html>
